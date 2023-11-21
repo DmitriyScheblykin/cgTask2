@@ -19,7 +19,7 @@ public class CircleSectorPanel extends JPanel {
         endAngleTextField = new JTextField(5);
         endAngleTextField.setText("0");
 
-        JButton drawButton = new JButton("Нарисовать");
+        JButton drawButton = new JButton("Зарисовать");
 
         add(new JLabel("Радиус:"));
         add(radiusTextField);
@@ -57,7 +57,7 @@ public class CircleSectorPanel extends JPanel {
             startAngle = Double.parseDouble(startAngleTextField.getText());
             endAngle = Double.parseDouble(endAngleTextField.getText());
         } catch (NumberFormatException ex) {
-            ex.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Ошибка ввода данных. Пожалуйста, введите корректные числовые значения.", "Ошибка", JOptionPane.ERROR_MESSAGE);
             return;
         }
 

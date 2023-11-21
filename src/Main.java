@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        JFrame frame = new JFrame("Пример сектора окружности");
+        JFrame frame = new JFrame("Закрашивание сектора");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
 

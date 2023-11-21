@@ -11,7 +11,6 @@ public class CircularSectorFiller implements CircleSectorFiller {
     public void fillSector(Graphics2D g, int centerX, int centerY, int radius, double startAngle, double endAngle) {
         int diameter = radius * 2;
 
-        g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
         g.setColor(Color.BLACK);
         g.drawArc(centerX - radius, centerY - radius, diameter, diameter, 0, 360);
