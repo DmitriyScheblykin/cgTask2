@@ -57,7 +57,6 @@ public class CircleSectorPanel extends JPanel {
             startAngle = Double.parseDouble(startAngleTextField.getText());
             endAngle = Double.parseDouble(endAngleTextField.getText());
         } catch (NumberFormatException ex) {
-            JOptionPane.showMessageDialog(this, "Ошибка ввода данных. Пожалуйста, введите корректные числовые значения.", "Ошибка", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
